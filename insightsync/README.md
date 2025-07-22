@@ -1,48 +1,27 @@
-# insightsync-ai
+# InsightSync-AI
 
-**Multimodal AI-powered Business Intelligence Extractor**
+**AI-powered Resume and Document Question Answering Demo**
 
-InsightSync AI is an open-source (or SaaS) platform that automates the extraction, summarization, and synchronization of actionable business insights from all types of unstructured digital communication—emails, docs, images, audio, and more. Built to save time, reduce errors, and keep teams in sync.
+This project demonstrates how to use modern NLP models (via HuggingFace Transformers) to extract and answer questions from PDF resumes and other documents.
 
----
+## Features (as of July 2025)
+- 📝 Extracts text from PDF resumes (using pdfplumber)
+- 🤖 Answers natural-language questions about the document (e.g. "What diploma did Rachael Tan achieve?")
+- 🔍 Optionally narrows to the Education section for more precise answers
+- 📦 Designed for easy extension to other document types and multimodal support
 
-## Features
+## Usage
+- Place your PDF in the `data/` folder (or update the file path in `main.py`)
+- Run the script with your question
+- See the extracted answer!
 
-- **Drag-and-drop upload** or API ingestion of emails, PDFs, images, audio, and spreadsheets.
-- **Multimodal ML processing**: Document Q&A, OCR, Audio-to-Text, Table QA, Summarization, Entity Extraction.
-- **Central dashboard** to review, search, and manage all extracted insights.
-- **Actionable workflow integration**: Sync tasks, contacts, and data to Notion, Trello, Slack, Google Sheets, and CRM.
-- **Smart filtering** and advanced search (by type, urgency, client, due date, etc.).
-- **Usage analytics** and customizable export options.
-- **Secure multi-user support** with role-based access and encrypted storage.
+## Roadmap / Future Vision
+- Add support for images (OCR), audio, emails, spreadsheets
+- Web dashboard and API endpoints
+- Integration with business tools (Notion, Google Sheets, CRM, etc.)
 
----
-
-## Tech Stack
-
-- **Frontend:** Next.js, Tailwind CSS
-- **Backend:** FastAPI (Python), Node.js (for integrations)
-- **ML:** Hugging Face Transformers, hosted inference endpoints
-- **Database:** PostgreSQL, Elasticsearch
-- **Storage:** AWS S3
-- **Worker:** Celery / Temporal
-- **Integrations:** Zapier, Notion API, Slack API, Google Workspace, CRM APIs
-- **Auth:** Auth0 / Clerk.js
-
----
-
-## How It Works
-
-1. **Ingest:** Upload or auto-forward files/emails/audio/images.
-2. **Analyze:** ML pipeline routes and processes files using the right Hugging Face models.
-3. **Extract:** Entities, tasks, numbers, and insights are pulled and summarized.
-4. **Review:** User confirms and edits in dashboard.
-5. **Sync:** Push actionable data to your favorite productivity tools.
-6. **Search & Export:** Instantly find anything; export as needed.
-
----
-
-## Demo
+## Why InsightSync?
+Manual document review is slow and error-prone. This project shows how modern AI can help automate information extraction from business documents, starting with resumes.
 
 
 
