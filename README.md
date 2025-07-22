@@ -56,11 +56,6 @@ InsightSync AI is an open-source (or SaaS) platform that automates the extractio
 
 ---
 
-## License
-
-MIT (or appropriate license)
-
----
 
 ## Contact
 
