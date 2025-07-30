@@ -1,0 +1,22 @@
+# Transformer-based Deep Learning Models (NLP/CV)
+- Transformers are a class of deep learning models designed for handling sequential data, especially language.
+
+### Examples: BERT, RoBERTa, DistilBERT, DeBERTa, LayoutLM, Donut
+
+They excel at understanding, generating, and reasoning about language (and, with extensions, also images/documents).
+
+Fine-tuning: These models are pre-trained on massive text/image data, then fine-tuned for specific tasks (like question-answering, summarization, document understanding).
+
+# Reports:
+
+Question asked: What is the name of the diploma in the EDUCATION section?
+
+## Transformers - NLP, Document AI, Vision
+
+Drop-in for pipeline: 
+- model="deepset/roberta-base-squad2" Score = 0.00
+- model="bert-large-uncased-whole-word-masking-finetuned-squad" Score = 0.92
+
+Need 'special code':
+- model='microsoft/layoutlmv3-base' Score = 
+- model='naver-clova-ix/donut-base-finetuned-docvqa' Score = 
